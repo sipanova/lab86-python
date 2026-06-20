@@ -41,6 +41,11 @@ Or build and run in a single command:
 ```bash
 make build-run
 ```
+## To clean everything
+
+```bash
+make clean
+```
 
 ## Project Structure
 

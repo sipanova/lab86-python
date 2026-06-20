@@ -77,6 +77,7 @@ def prompt_openai_client(client, prompt):
 
 
 def compile_fortran_code(fortran_code, index):
+    os.makedirs(fortran_files_path, exist_ok=True)
     source_file = os.path.join(fortran_files_path, f"prime_sum_{index}.f90")
     executable = os.path.join(fortran_files_path, f"prime_sum_{index}")
 
